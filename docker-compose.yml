@@ -56,11 +56,12 @@ services:
       MANAGED_WORKER_SECRET: ${MANAGED_WORKER_SECRET}
       REDIS_HOST: redis
       REDIS_PORT: 6379
-      REDIS_TLS_DISABLED: true
-      # Allow insecure cookies for HTTP (non-HTTPS) access
-      AUTH_COOKIE_SECURE: "false"
-      SECURE_COOKIE: "false"
+            # Allow insecure cookies for HTTP (non-HTTPS) access
+      AUTH_COOKIE_SECURE: false
+      SECURE_COOKIE: false
       NODE_ENV: development
+
+      REDIS_TLS_DISABLED: true
       APP_LOG_LEVEL: info
       DEV_OTEL_EXPORTER_OTLP_ENDPOINT: ${DEV_OTEL_EXPORTER_OTLP_ENDPOINT:-http://localhost:8030/otel}
       DEPLOY_REGISTRY_HOST: ${DOCKER_REGISTRY_URL:-localhost:5000}
