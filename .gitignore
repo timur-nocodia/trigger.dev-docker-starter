@@ -1,0 +1,29 @@
+# Environment
+.env
+
+# Registry credentials
+registry/auth.htpasswd
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker volumes (if stored locally)
+data/
+
+# Temporary files
+tmp/
+temp/
+
